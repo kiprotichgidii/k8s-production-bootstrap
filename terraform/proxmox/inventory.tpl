@@ -9,17 +9,17 @@ all:
   children:
     kube_control_plane:
       hosts:
-%{ for name in vm_names ~}
+%{ for name in masters ~}
         ${name}:
 %{ endfor ~}
     kube_node:
       hosts:
-%{ for name in vm_names ~}
+%{ for name in workers ~}
         ${name}:
 %{ endfor ~}
     etcd:
       hosts:
-%{ for name in vm_names ~}
+%{ for name in masters ~}
         ${name}:
 %{ endfor ~}
     k8s_cluster:

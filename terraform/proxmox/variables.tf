@@ -27,6 +27,12 @@ variable "vm_count" {
   default     = 3
 }
 
+variable "master_count" {
+  description = "Number of Control Plane Nodes"
+  type        = number
+  default     = 1
+}
+
 variable "vm_name_prefix" {
   description = "Prefix for VM names"
   type        = string
