@@ -1,10 +1,11 @@
 all:
   hosts:
-    %{ for index, name in vm_names ~}
+  hosts:
+    %{ for name in vm_names ~}
     ${name}:
-      ansible_host: ${vm_ips[index]}
-      ip: ${vm_ips[index]}
-      access_ip: ${vm_ips[index]}
+      ansible_host: ${vm_ips[name]}
+      ip: ${vm_ips[name]}
+      access_ip: ${vm_ips[name]}
     %{ endfor ~}
   children:
     kube_control_plane:
