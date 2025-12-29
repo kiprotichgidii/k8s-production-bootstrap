@@ -56,7 +56,6 @@ module "proxmox_vm" {
     ip_address    = "192.168.1.130/24"
     enable_dhcp   = false
     nic           = "enp6s18"
-
   }
 }
 
