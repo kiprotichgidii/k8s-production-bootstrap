@@ -8,6 +8,13 @@ terraform {
       version = "= 3.0.2-rc06"
     }
   }
+
+  cloud {
+    organization = "devops_projects_gidii"
+    workspaces {
+      name = "k8s-production-bootstrap"
+    }
+  }
 }
 
 # Proxmox VM Resource
