@@ -15,34 +15,10 @@ variable "proxmox_password" {
   sensitive   = true
 }
 
-variable "node" {
-  description = "Proxmox Node"
-  type        = string
-  default     = "proxmox-pve01"
-}
-
-variable "vm_count" {
-  description = "Number of VMs to create"
-  type        = number
-  default     = 3
-}
-
 variable "master_count" {
   description = "Number of Control Plane Nodes"
   type        = number
   default     = 1
-}
-
-variable "vm_name_prefix" {
-  description = "Prefix for VM names"
-  type        = string
-  default     = "k8snode"
-}
-
-variable "template_id" {
-  description = "VM Template ID"
-  type        = number
-  default     = 9003
 }
 
 variable "ssh_keys" {
