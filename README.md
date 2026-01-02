@@ -31,6 +31,5 @@ See `docs/architecture.md`
 
 ### 1. Provision VMs
 ```bash
-cd terraform/proxmox
 terraform init
 ```
