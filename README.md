@@ -30,6 +30,10 @@ See `docs/architecture.md`
 ## Deployment Workflow
 
 ### 1. Provision VMs
+Change to the terraform directory:
+```bash
+cd ./terraform/proxmox
+```
 ```bash
 terraform init
 ```
