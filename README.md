@@ -38,3 +38,7 @@ Then initialize terraform:
 ```bash
 terraform init
 ```
+Then you run the plan command to confirm what will be provisioned:
+```bash
+terraform plan
+```
