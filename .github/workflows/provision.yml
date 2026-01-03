@@ -54,6 +54,6 @@ jobs:
     #  - name: Upload Ansible Inventory
     #    if: always()
     #    uses: actions/upload-artifact@v4
-        with:
-          name: ansible-inventory
-          path: ansible/kubespray/inventory/hosts.yml
+    #    with:
+    #      name: ansible-inventory
+    #      path: ansible/kubespray/inventory/hosts.yml
