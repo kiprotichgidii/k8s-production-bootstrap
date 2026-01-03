@@ -45,4 +45,4 @@ jobs:
         env:
           ANSIBLE_HOST_KEY_CHECKING: "False"
         run: |
-          ansible-playbook -i kubespray/inventory/hosts.yml bootstrap.yml --private-key ~/.ssh/id_rsa
+          ansible-playbook -i kubespray/inventory/hosts.yml bootstrap/preinstall.yml --private-key ~/.ssh/id_rsa
